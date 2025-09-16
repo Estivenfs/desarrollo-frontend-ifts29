@@ -145,10 +145,10 @@ La organización del proyecto sigue las mejores prácticas de desarrollo web:
 - **Habilidades**: HTML, CSS, POO, JavaScript, SQL, C#, Git, Kotlin, Modelado y diseño de Software, Forjador de Telarañas Digitales, Maestro de Código
 - **Secciones**: Información personal, habilidades técnicas, experiencia, películas favoritas y música
 - **Funcionalidades Dinámicas JavaScript**:
-  - **Cambio de Lema Dinámico**: Botón que rota entre diferentes lemas de casas de Game of Thrones ("El invierno se acerca...", "Escucha mi rugido!", "Fuego y Sangre", "Nunca doblegado, nunca roto", "Crece fuerte")
-  - **Toggle de Información Adicional**: Botón que muestra/oculta información extra sobre experiencia y hobbies
-  - **Alerta Interactiva**: Botón "Saludar" que muestra un mensaje temático "¡El Norte recuerda! Valar Morghulis."
-  - **Scroll Suave**: Función para navegación fluida al inicio de la página desde el footer
+  - **Cambio de Lema Dinámico**: Función `cambiarLema()` que rota entre diferentes lemas de casas de Game of Thrones
+  - **Toggle de Información**: Función `toggleInfo()` que muestra/oculta información adicional del perfil
+  - **Saludar**: Función `saludar()` que muestra un mensaje especial al usuario
+  - **Scroll Suave**: Función `scrollSuave()` para navegación fluida entre secciones
 
 
 #### Victoria (victoria.html)
@@ -158,12 +158,10 @@ La organización del proyecto sigue las mejores prácticas de desarrollo web:
 - **Secciones**: Información personal, habilidades técnicas, proyectos destacados (Deboot, Hyped, InteractxTech), películas favoritas y música
 - **Características**: Incluye showcase de proyectos con prototipos interactivos
 - **Funcionalidades Dinámicas JavaScript**:
-  - **Efecto Typing**: Animación de escritura automática en el nombre del perfil
-  - **Animación de Habilidades**: Las skill-tags aparecen con efecto de fade-in y translateY secuencial
-  - **Carrusel de Proyectos**: Navegación automática e interactiva de proyectos con controles personalizados
-  - **Efecto de Corazones**: Función `mostrarCodigoEjemplo()` que genera emojis de hadas flotantes animados
-  - **Mini-juego**: Elemento interactivo con jugador controlable
-  - **Scroll Suave**: Navegación fluida hacia el inicio de la página desde el footer
+  - **Animaciones de Hadas**: Función `crearCorazon()` que genera hadas flotantes animados
+  - **Carrusel Bootstrap**: Carrusel automático de proyectos con controles de navegación
+  - **Efecto de Escritura**: Animación de texto tipo máquina de escribir para el nombre en el h2
+  - **Botón Volver Arriba**: Función de scroll suave hacia la parte superior de la página
 
 #### Sebastián (sebastian.html)
 - **Perfil Completo**: Desarrollador Full Stack con gran pasión por la innovación y las nuevas tecnologías. Se especializa en la integración de sistemas.
@@ -171,11 +169,8 @@ La organización del proyecto sigue las mejores prácticas de desarrollo web:
 - **Habilidades**: Vue.js, React, PHP, Laravel, MySQL, Docker, Git, AWS
 - **Secciones**: Información personal, habilidades técnicas, certificaciones (AWS Certified Developer, Vue.js Expert, Scrum Master), películas favoritas y música
 - **Funcionalidades Dinámicas JavaScript**:
-  - **Efecto Pulso en Imagen**: La imagen de perfil tiene un efecto de escala pulsante cada 3 segundos
-  - **Animación de Habilidades**: Las skill-tags aparecen secuencialmente con efecto translateY y fade-in
-  - **Barras de Progreso Animadas**: Función `mostrarProgreso()` que anima las barras de habilidades con transiciones suaves
-  - **Animación de Certificaciones**: Función `animarCertificaciones()` con efectos de translateX y fade-in
-  - **Sistema de Alertas**: Notificaciones personalizadas con función `mostrarAlerta()` integrada
+  - **Rotación de Imagen**: Función `cambiarImagen()` que rota la imagen de perfil con transiciones
+  - **Efectos Hover**: Animaciones de elevación en tarjetas de películas y música
 
 #### José (jose.html)
 - **Perfil Completo**: Página temática de Wolverine/Logan. Estudiante que busca su camino en el mundo de la programación.
@@ -183,11 +178,10 @@ La organización del proyecto sigue las mejores prácticas de desarrollo web:
 - **Habilidades**: Factor de curación acelerado, Garras de adamantium, Combate cuerpo a cuerpo, Sentidos agudizados, Resistencia sobrehumana, Envejecimiento casi inexistente
 - **Secciones**: Información del personaje Wolverine, habilidades mutantes, experiencia como X-Men y soldado, información sobre José como estudiante
 - **Funcionalidades Dinámicas JavaScript**:
-  - **Cambio de Imagen Dinámico**: Función `cambiarImagen()` que rota entre 4 imágenes diferentes de Logan con efecto de fade
-  - **Carrusel de Juegos**: Carrusel automático de imágenes de videojuegos con intervalo personalizado de 1.3 segundos
-  - **Datos Aleatorios de Wolverine**: Función `datoRandom()` que muestra información curiosa aleatoria sobre el personaje
-  - **Video de Fondo**: Reproducción automática de video temático de Logan en loop
-  - **Scroll Suave**: Navegación fluida entre secciones de la página
+  - **Cambio de Imagen**: Función `cambiarImagen()` que rota entre diferentes imágenes de Wolverine
+  - **Scroll Suave**: Función `scrollSuave()` para navegación fluida entre secciones
+  - **Datos Aleatorios**: Función `datoRandom()` que muestra curiosidades sobre Wolverine en alertas
+  - **Carrusel Bootstrap**: Carrusel automático de juegos con intervalo personalizado de 1.3 segundos
 
 #### Estiven (estiven.html)
 - **Perfil Completo**: Desarrollador de software estudiando en el IFTS N° 29. Trabaja desarrollando aplicaciones web para empresa mediana, especializado en e-commerce de muebles de pino.
@@ -200,20 +194,13 @@ La organización del proyecto sigue las mejores prácticas de desarrollo web:
   - **Carrusel 3D de Música**: Carrusel tridimensional interactivo para mostrar música favorita con navegación manual
   - **Carrusel de Películas**: Sistema de carrusel automático para series y películas favoritas con indicadores
   - **Efectos Hover Avanzados**: Animaciones de elevación en tarjetas de favoritos con translateY
-  - **Animaciones de Scroll**: Intersection Observer para animar elementos al entrar en viewport
-  - **Cambio de Colores**: Función `cambiarColoresHabilidades()` para modificar dinámicamente los colores de las skill-tags
-  - **Barras de Progreso**: Animación de barras de habilidades con efectos de carga progresiva
-  - **Efecto Typewriter**: Animación de escritura automática para textos dinámicos
-  - **Botón Scroll to Top**: Funcionalidad de retorno suave al inicio de la página
 
 ### Bitácora (bitacora.html)
 - **Resumen Ejecutivo**: Generación dinámica de resumen del proyecto
-- **Timeline Interactivo**: Documentación visual del proceso de desarrollo
 - **Animaciones de Entrada**: Efectos de aparición basados en scroll
 - **Navegación Contextual**: Enlaces directos a secciones específicas
 
 ### Funcionalidades Globales
-- **Tema Dinámico**: Sistema completo de modo claro/oscuro
 - **Diseño Responsivo**: Adaptación a dispositivos móviles, tablets y desktop
 - **Navegación Intuitiva**: Menú de navegación con dropdown y enlaces contextuales
 - **Alertas Personalizadas**: Sistema de notificaciones para interacciones
@@ -310,98 +297,10 @@ El archivo `styles.css` está organizado en las siguientes secciones:
 - **Scroll Suave**: Función `scrollSuave()` para navegación fluida entre secciones
 - **Sistema de Alertas**: Función `mostrarAlerta()` para notificaciones personalizadas
 
-### Páginas Individuales
-
-Cada página individual de los integrantes del equipo incluye funcionalidades interactivas específicas:
-
-#### Funcionalidades Comunes en Todas las Páginas
-- **Diseño Responsivo**: Adaptación completa a dispositivos móviles, tablets y desktop
-- **Navegación Integrada**: Menú de navegación con dropdown que incluye todos los 5 integrantes
-- **Secciones Completas**: Información personal, habilidades técnicas, experiencia profesional
-- **Entretenimiento**: Secciones de películas favoritas y música con descripciones detalladas
-- **Efectos Visuales**: Animaciones CSS y transiciones suaves en toda la interfaz
-
-#### Lucas (`lucas.html`)
-- **Especialización**: Desarrollador apasionado por la tecnología y el desarrollo de software
-- **Ubicación**: Villa Devoto, CABA - Desarrollador de 31 años
-- **Stack Tecnológico**: HTML, CSS, JavaScript, POO, SQL, C#, Git, Kotlin
-
-#### Victoria (`victoria.html`)
-- **Especialización UX/UI**: Diseñadora multimedia especializada en interfaces intuitivas y atractivas
-- **Ubicación**: Buenos Aires, Argentina - Diseñadora de 23 años
-- **Herramientas de Diseño**: Figma, Adobe Suit, Prototipado, HTML, CSS, JavaScript, Kotlin
-
-#### Sebastián (`sebastian.html`)
-- **Especialización Full Stack**: Desarrollador con pasión por la innovación y integración de sistemas
-- **Ubicación**: Valencia, España - Desarrollador de 26 años
-- **Tecnologías**: Vue.js, React, PHP, Laravel, MySQL, Docker, Git, AWS
-
-#### José (`jose.html`)
-- **Especialización**: Página temática de Wolverine - Estudiante de programación
-- **Ubicación**: ??? - Más de 100 años (personaje ficticio)
-- **Habilidades Mutantes**: Factor de curación, garras de adamantium, sentidos agudizados
-- **Entretenimiento**: Temática de superhéroes y experiencia como X-Men
-
-#### Estiven (`estiven.html`)
-- **Especialización**: Desarrollador web especializado en e-commerce
-- **Ubicación**: Buenos Aires, Argentina - Desarrollador de 31 años
-- **Tecnologías**: NodeJS, MySQL, Express, NestJS, NextJS, Python, C#, .NET
-- **Entretenimiento**: Películas de ciencia ficción y música experimental con carrusel interactivo
-
-#### Bitácora (`bitacora.html`)
-- **Resumen Ejecutivo**: Función `mostrarResumen()` que genera y muestra dinámicamente un resumen del proyecto
-- **Timeline Interactivo**: Animaciones de entrada basadas en scroll para las fases del proyecto
-- **Navegación Contextual**: Scroll automático hacia secciones específicas
-- **Efectos de Aparición**: Intersection Observer para animar elementos al entrar en viewport
-
-### Utilidades Compartidas
-
-El archivo `main.js` incluye funciones globales disponibles en todas las páginas:
-
-1. **Gestión de Temas**: Sistema completo de modo claro/oscuro con persistencia
-2. **Animaciones**: Efectos visuales y transiciones suaves
-3. **Navegación**: Scroll suave y navegación entre secciones
-4. **Interactividad**: Event listeners y manipulación del DOM
-5. **Utilidades**: Funciones helper para alertas, validaciones y efectos visuales
-
-## Créditos y Reconocimientos
-
-- **Bootstrap Team**: Por el excelente framework CSS
-- **Google Fonts**: Por las tipografías Poppins y Roboto
-- **Bootstrap Icons**: Por la iconografía moderna
-- **Equipo de Desarrollo**: Lucas, Victoria, Sebastián, Luis y Estiven
-
-## Integrantes del Equipo
-
-### 👨‍💻 Lucas - Developer
-- **Especialidad**: HTML, CSS, JavaScript, POO, SQL, C#, Git, Kotlin
-- **Ubicación**: Villa Devoto, CABA
-- **Edad**: 31 años
-
-### 🎨 Victoria - UX/UI Designer
-- **Especialidad**: Figma, Adobe Suite, Prototipado, HTML, CSS, JavaScript, Kotlin
-- **Ubicación**: Buenos Aires, Argentina
-- **Edad**: 23 años
-
-### ⚙️ Sebastián - Full Stack Developer
-- **Especialidad**: Vue.js, React, PHP, Laravel, MySQL, Docker, Git, AWS
-- **Ubicación**: Valencia, España
-- **Edad**: 26 años
-
-### 🦸 José - Wolverine Theme / Student
-- **Especialidad**: Factor de curación, garras de adamantium, sentidos agudizados
-- **Ubicación**: ???
-- **Edad**: Más de 100 años (personaje ficticio)
-
-### 💻 Estiven - Web Developer
-- **Especialidad**: NodeJS, MySQL, Express, NestJS, NextJS, Python, C#, .NET
-- **Ubicación**: Buenos Aires, Argentina
-- **Edad**: 31 años
-
 ## Licencia
 
 Este proyecto es de uso educativo y está disponible bajo licencia MIT.
 
 ---
 
-**Equipo Innovador** - Desarrollando el futuro, una línea de código a la vez. 🚀
+**Equipo Innovador - Grupo 9** - Desarrollando el futuro, una línea de código a la vez. 🚀
