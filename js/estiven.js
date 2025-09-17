@@ -240,9 +240,20 @@ function updateCarousel() {
     
     if (!carousel) return;
     
-    // Rotar el carrusel
-    const rotation = currentSlide * -90;
-    carousel.style.transform = `rotateY(${rotation}deg)`;
+    // Detectar si estamos en pantalla pequeña
+    const isMobile = window.innerWidth <= 768;
+    
+    if (isMobile) {
+        // En móviles: usar deslizamiento horizontal
+        const itemWidth = 270; // 250px + 20px margin
+        const containerWidth = carousel.parentElement.offsetWidth;
+        const offset = (containerWidth / 2) - (itemWidth / 2) - (currentSlide * itemWidth);
+        carousel.style.transform = `translateX(${offset}px)`;
+    } else {
+        // En desktop: usar rotación 3D
+        const rotation = currentSlide * -90;
+        carousel.style.transform = `rotateY(${rotation}deg)`;
+    }
     
     // Actualizar clases activas
     items.forEach((item, index) => {
@@ -260,12 +271,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializar el carrusel 3D después de un pequeño delay
     setTimeout(() => {
         updateCarousel();
-        
-        // Auto-rotación opcional (comentado por defecto)
-        // setInterval(() => {
-        //     rotateCarousel(1);
-        // }, 5000);
-    }, 500);
+    }, 100);
+    
+    // Actualizar carrusel cuando cambie el tamaño de ventana
+    window.addEventListener('resize', function() {
+        updateCarousel();
+    });
     
     // Agregar soporte para navegación con teclado
     document.addEventListener('keydown', function(e) {
@@ -275,6 +286,11 @@ document.addEventListener('DOMContentLoaded', function() {
             rotateCarousel(1);
         }
     });
+    
+    // Auto-rotación opcional (comentado por defecto)
+    // setInterval(() => {
+    //     rotateCarousel(1);
+    // }, 5000);
 });
 
 // Agregar estilos de animación CSS dinámicamente

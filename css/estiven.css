@@ -430,35 +430,79 @@
 @media (max-width: 768px) {
     .carousel-3d-container {
         height: 400px;
-        perspective: 800px;
+        perspective: none;
+        overflow: hidden;
     }
     
     .carousel-3d {
-        width: 250px;
+        width: 100%;
         height: 320px;
+        display: flex;
+        transition: transform 0.5s ease;
+        transform-style: flat;
     }
     
     .carousel-3d-item {
         width: 250px;
         height: 320px;
+        flex-shrink: 0;
+        position: relative;
+        transform: none !important;
+        opacity: 0.7;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        margin: 0 10px;
     }
     
-    .carousel-3d-item:nth-child(1),
-    .carousel-3d-item:nth-child(2),
-    .carousel-3d-item:nth-child(3),
-    .carousel-3d-item:nth-child(4) {
-        transform: rotateY(calc(var(--rotation, 0) * 90deg)) translateZ(200px);
+    .carousel-3d-item.active {
+        opacity: 1;
+        transform: scale(1.05) !important;
+        z-index: 10;
+    }
+    
+    .carousel-3d-item:not(.active) {
+        transform: scale(0.9) !important;
     }
     
     .music-card {
         padding: 20px;
+        height: 100%;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     }
     
-    .music-card h5 {
+    .music-card h4 {
         font-size: 1.1rem;
     }
     
     .music-card p {
         font-size: 0.8rem;
+    }
+    
+    /* Desactivar animación float en móviles */
+    .carousel-3d-item.active .music-card {
+        animation: none;
+    }
+    
+    /* Ocultar sección de otros integrantes en pantallas pequeñas */
+    .bg-primary .text-center {
+        display: none !important;
+    }
+    
+    /* Ocultar descripción de música en pantallas pequeñas */
+    .music-card p {
+        display: none !important;
+    }
+    
+    /* Modificar carrusel de películas para pantallas pequeñas */
+    .custom-carousel .carousel-item .d-flex {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    
+    .custom-carousel .carousel-item .flex-shrink-0 {
+        margin: 0 auto 20px auto !important;
+    }
+    
+    .custom-carousel .carousel-item p {
+        display: none !important;
     }
 }
