@@ -54,25 +54,9 @@ Presentacion/
 │   ├── hero-bg.mp4             # Video de fondo para la sección hero
 │   └── logan fondo.mp4         # Video de fondo para la página de Logan
 └── img/
-    ├── logo.svg                    # Logo del equipo
-    ├── favicon.png                 # Favicon principal
-    ├── fondo-index.png            # Fondo de la página principal
-    ├── bitacora.jpg               # Imagen para bitácora
     ├── bitacora-favicon.png       # Favicon de bitácora
-    ├── pelis_foto.png             # Imagen de películas
+    ├── bitacora.jpg               # Imagen para bitácora
     ├── ed_foto.png                # Foto de Ed
-    ├── avatar1.svg                # Avatar de Lucas
-    ├── avatar2.svg                # Avatar de Victoria
-    ├── avatar3.svg                # Avatar de Sebastián
-    ├── avatar4.svg                # Avatar de Luis
-    ├── avatar5.svg                # Avatar de Estiven
-    ├── lucas_perfil.png           # Perfil de Lucas
-    ├── lucas_background.png       # Fondo de Lucas
-    ├── lucas_icn.ico              # Icono de Lucas
-    ├── logan.png                  # Imagen de Logan
-    ├── logan2.jpeg                # Imagen de Logan 2
-    ├── logan3.jpeg                # Imagen de Logan 3
-    ├── logan4.jpeg                # Imagen de Logan 4
     ├── est-avatar.png             # Avatar de Estiven
     ├── est-ghost-song.jpg         # Canción Ghost de Estiven
     ├── est-hall_of_fame-song.jpg  # Canción Hall of Fame de Estiven
@@ -83,6 +67,40 @@ Presentacion/
     ├── est-thameypo-movie.webp    # Serie Thame y Po de Estiven
     ├── est-the_nights-song.jpg    # Canción The Nights de Estiven
     ├── est-you_are_the_reason-song.jpg # Canción You Are The Reason de Estiven
+    ├── favicon.png                # Favicon principal
+    ├── fondo-index.png            # Fondo de la página principal
+    ├── jose-favicon.png           # Favicon de José
+    ├── jose.png                   # Imagen de José
+    ├── juego1.png                 # Imagen de juego 1
+    ├── juego2.png                 # Imagen de juego 2
+    ├── juego3.png                 # Imagen de juego 3
+    ├── juego4.png                 # Imagen de juego 4
+    ├── logan.png                  # Imagen de Logan
+    ├── logan2.jpeg                # Imagen de Logan 2
+    ├── logan3.jpeg                # Imagen de Logan 3
+    ├── logan4.jpeg                # Imagen de Logan 4
+    ├── logo.png                   # Logo del equipo (PNG)
+    ├── logo.svg                   # Logo del equipo (SVG)
+    ├── lucas_background.png       # Fondo de Lucas
+    ├── lucas_icn.ico              # Icono de Lucas
+    ├── lucas_perfil.png           # Perfil de Lucas
+    ├── pelis_foto.png             # Imagen de películas
+    ├── sebas-numb.jpg             # Canción Numb de Sebastián
+    ├── sebastian-Como_Hackear_seu_Chefe3.jpg # Película Como Hackear seu Chefe de Sebastián
+    ├── sebastian-ajeoosi2.jpg     # Película Ajeoosi de Sebastián
+    ├── sebastian-creep.jpg        # Canción Creep de Sebastián
+    ├── sebastian-dontcry.jpg      # Canción Don't Cry de Sebastián
+    ├── sebastian-perfil.webp      # Perfil de Sebastián
+    ├── sebastian-redes.jpg        # Película Redes de Sebastián
+    ├── sebastian-scorpion1.jpg    # Película Scorpion de Sebastián
+    ├── sebastian-terminator2.jpg  # Película Terminator de Sebastián
+    ├── sebastian-thebigshort1.jpg # Película The Big Short de Sebastián
+    ├── vic-melodrama.jpg          # Álbum Melodrama de Victoria
+    ├── vic-orgullo.webp           # Álbum Orgullo de Victoria
+    ├── vic-oyster.jpg             # Álbum Oyster de Victoria
+    ├── vic-renglones.jpg          # Álbum Renglones de Victoria
+    ├── vic-speaknow.jpg           # Álbum Speak Now de Victoria
+    ├── vic-virgin.jpeg            # Álbum Virgin de Victoria
     ├── victoria-deboot.png        # Imagen Deboot de Victoria
     ├── victoria-favicon.png       # Favicon de Victoria
     ├── victoria-fondo.webp        # Fondo de Victoria
@@ -90,13 +108,7 @@ Presentacion/
     ├── victoria-hyped.png         # Imagen Hyped de Victoria
     ├── victoria-ind.png           # Imagen Ind de Victoria
     ├── victoria-interact.png      # Imagen Interact de Victoria
-    ├── victoria-korean.jpg        # Imagen Korean de Victoria
-    ├── vic-melodrama.jpg          # Álbum Melodrama de Victoria
-    ├── vic-orgullo.webp           # Álbum Orgullo de Victoria
-    ├── vic-oyster.jpg             # Álbum Oyster de Victoria
-    ├── vic-renglones.jpg          # Álbum Renglones de Victoria
-    ├── vic-speaknow.jpg           # Álbum Speak Now de Victoria
-    └── vic-virgin.jpeg            # Álbum Virgin de Victoria
+    └── victoria-korean.jpg        # Imagen Korean de Victoria
 ```
 
 ## Estructura de Archivos
